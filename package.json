@@ -1,7 +1,7 @@
 {
-  "name": "sick-fits-frontend",
+  "name": "nextjs-web3-nft-marketplace",
   "version": "1.0.0",
-  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
+  "description": "NextJS Web3 NFT Marketplace",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
@@ -19,7 +19,7 @@
       "react/jsx-props-no-spreading": 0
     }
   },
-  "author": "",
+  "author": "Moises Sanabria",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^7.0.0-bridge.0",
@@ -39,7 +39,6 @@
     "waait": "^1.0.5"
   },
   "devDependencies": {
-    "@apollo/react-testing": "^4.0.0",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@testing-library/jest-dom": "^5.11.8",
