@@ -12,12 +12,11 @@ const CardStyles = styled.div`
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  flex: 1 1 auto;
   background-color: var(--theme-ui-colors-white-100, #ffffff);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
@@ -70,16 +69,25 @@ const CardStyles = styled.div`
     ) !important;
   }
   .asset-container {
+    position: relative;
+  }
+  .asset-wrapper {
+    box-sizing: border-box;
     margin: 0;
     min-width: 0;
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex: 1;
-    background: red;
-    box-sizing: border-box;
   }
-  .asset-wrapper {
+  .asset-wrapper span {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+  }
+  .asset-wrapper-inner {
+    box-sizing: border-box;
     margin: 0;
     min-width: 0;
     position: absolute;
@@ -87,7 +95,7 @@ const CardStyles = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--theme-ui-colors-black-5, #f2f2f2);
+    background-color: var(--theme-ui-colors-black-5,#F2F2F2);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -101,30 +109,17 @@ const CardStyles = styled.div`
     -ms-flex-align: center;
     align-items: center;
   }
-  .asset-wrapper span {
-    opacity: 1;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    background: yellow;
-    border: 5px solid red;
-  }
   video.asset {
     display: block;
     object-fit: cover;
     width: 100%;
     height: 100%;
     position: absolute;
-    max-width: 100%;
   }
   .verse-container {
     box-sizing: border-box;
     margin: 0;
     min-width: 0;
-    display: none;
     grid-gap: 24px;
     box-shadow: 0px 10px 20px rgb(0 0 0 / 5%);
     padding: 24px;
@@ -170,6 +165,11 @@ export default function Card() {
       <div className="verse-container">
         <div className="verse-writer">
           <h3>COMPUTER MAN</h3>
+          <div>
+            Even thou I scroll through the uncanny valley of neural capitalism,
+            I will fear no AI for your upvotes are with me, your likes, your
+            replies they comfort me.
+          </div>
           <div>— Sad Keanu 14:34</div>
         </div>
       </div>
