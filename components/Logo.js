@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const LogoStyles = styled.div`
+  height: 50px;
   background: red;
   box-sizing: border-box;
   margin: 0;
@@ -11,17 +12,28 @@ const LogoStyles = styled.div`
   display: flex;
   color: var(--theme-ui-colors-black-100, #000000);
   .logo-wrapper {
-    height: 33px;
-    width: 98px;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-wrapper:hover {
+    cursor: pointer;
   }
   .logo {
+    height: 160%;
+    top: -10px;
+    position: relative;
   }
 `;
 
 export default function Logo() {
   return (
     <LogoStyles>
-      <div className="logo-wrapper" />
+      <div className="logo-wrapper">
+        <img className="logo"
+          src="./assets/icons/tech-prophecies-logo.png"
+          alt="tech prohecies nft"
+        />
+      </div>
     </LogoStyles>
   );
 }
