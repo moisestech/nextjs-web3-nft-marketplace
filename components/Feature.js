@@ -100,15 +100,69 @@ const FeatureStyles = styled.section`
     }
   }
   .feature-info-container {
-    padding-bottom: 24px;
     box-sizing: border-box;
     margin: 0;
     min-width: 0;
-    border: 1px solid black;
   }
   @media screen and (min-width: 64em) {
     .feature-info-container {
       padding-bottom: 24px;
+    }
+  }
+  .feature-info-wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: grid;
+    grid-gap: 24px;
+  }
+  @media screen and (min-width: 64em) {
+    .feature-info-wrapper {
+      grid-gap: 32px;
+    }
+  }
+  .feature-info-title {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    padding-top: 16px;
+    z-index: 50;
+  }
+  .feature-info-title h2 {
+    color: white;
+  }
+  .feature-info-title h3 {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    font-family: heading;
+    font-weight: 200;
+    line-height: heading;
+    font-family: 'TechProphecy', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
+    font-size: 36px;
+    line-height: 1;
+    -webkit-letter-spacing: -0.02em;
+    -moz-letter-spacing: -0.02em;
+    -ms-letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
+    font-size: 46px;
+    color: white;
+  }
+  @media screen and (min-width: 52em) {
+    .feature-info-title h3 {
+      font-size: 46px;
+    }
+  }
+  @media screen and (min-width: 52em) {
+    .feature-info-title h3 {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 64em) {
+    .feature-info-title h3 {
+      font-size: 56px;
     }
   }
 `;
@@ -130,7 +184,18 @@ export default function Feature() {
             </div>
           </div>
         </a>
-        <div className="feature-info-container" />
+        <div className="feature-info-container">
+          <div className="feature-info-wrapper">
+            <div className="feature-info-title">
+              <h2>Tech Prophecy #87</h2>
+              <h3>
+                Even thou I scroll through the uncanny valley of neural
+                capitalism, I will fear no AI for your upvotes are with me, your
+                likes, your replies they comfort me.
+              </h3>
+            </div>
+          </div>
+        </div>
       </div>
     </FeatureStyles>
   );
