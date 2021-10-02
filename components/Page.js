@@ -105,6 +105,10 @@ const GlobalStyles = createGlobalStyle`
       -moz-box-sizing: inherit;
       box-sizing: inherit;
     }
+    @font-face {
+      font-family: 'TechProphecy';
+      src: url('./assets/fonts/CloisterBlack.woff');
+    }
     textarea:focus,
     input:focus {
       outline: none;
