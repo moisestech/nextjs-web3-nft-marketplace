@@ -98,9 +98,8 @@ const BackgroundStyles = styled.div`
     animation: move-twink-back 200s linear infinite;
   }
   .clouds {
-    background: transparent
-      url('http://www.script-tutorials.com/demos/360/images/clouds3.png') repeat
-      top center;
+    background: transparent url('./assets/images/cloudsblue.png') repeat top
+      center;
     z-index: 3;
 
     -moz-animation: move-clouds-back 200s linear infinite;
