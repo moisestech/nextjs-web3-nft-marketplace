@@ -26,14 +26,14 @@ const MenuStyles = styled.nav`
     padding-right: var(--st--space-1);
   }
   a:hover {
-    color: var(--st--colors-black100);
+    color: var(--st--colors-white100);
   }
 `;
 
 export default function Menu() {
   return (
     <MenuStyles>
-      <Link href="/products">Explore</Link>
+      <Link href="/explore">Explore</Link>
       <Link href="/about">About</Link>
       <Link href="/mint">Mint</Link>
     </MenuStyles>
